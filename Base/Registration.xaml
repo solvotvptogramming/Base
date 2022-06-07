@@ -1,0 +1,22 @@
+﻿<Page x:Class="Base.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Base"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Registration">
+
+    <StackPanel>
+        <Label  Content="Login"></Label>
+        <TextBox x:Name="Login1"></TextBox>
+        <Label Content="Password"></Label>
+        <PasswordBox x:Name="Parol1"></PasswordBox>
+        <Label Content="Repeat password"></Label>
+        <TextBox x:Name="Parol2"></TextBox>
+        <Button Click="Button_Click" Content="OK"></Button>
+        <Image Source="Resourses/authorization-through-esia.png" />
+    </StackPanel>
+
+</Page>
