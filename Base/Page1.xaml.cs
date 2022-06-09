@@ -31,7 +31,9 @@ namespace Base
             var users = db.Users.Where((user) => user.login == Login.Text && user.password == Parol.Password).ToList();
             if (users.Count > 0)
             {
-                NavigationService.Navigate(new Page2());
+               
+                    Console.WriteLine(db.User_Type.Find(users[0].type).Name);        
+                
             }
             else
             {

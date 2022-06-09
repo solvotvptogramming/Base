@@ -12,13 +12,11 @@ namespace Base
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class User_Type
     {
-        public string login { get; set; }
         public int id { get; set; }
-        public string password { get; set; }
-        public int type { get; set; }
+        public string Name { get; set; }
     
-        public virtual User_Type User_Type { get; set; }
+        public virtual Users Users { get; set; }
     }
 }

@@ -26,15 +26,15 @@
     <Property Name="password" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="type" Type="int" Nullable="false" />
   </EntityType>
-  <Association Name="FK_Users_User_Type">
+  <Association Name="FK_Users_User_Type1">
     <End Role="User_Type" Type="Self.User_Type" Multiplicity="1" />
-    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
     <ReferentialConstraint>
       <Principal Role="User_Type">
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Users">
-        <PropertyRef Name="type" />
+        <PropertyRef Name="id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -73,7 +73,7 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User_Type" EntityType="Self.User_Type" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_Users_User_Type" Association="Self.FK_Users_User_Type">
+    <AssociationSet Name="FK_Users_User_Type1" Association="Self.FK_Users_User_Type1">
       <End Role="User_Type" EntitySet="User_Type" />
       <End Role="Users" EntitySet="Users" />
     </AssociationSet>

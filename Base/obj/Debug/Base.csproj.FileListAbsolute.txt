@@ -79,3 +79,5 @@ D:\C#\Base\Base\obj\Debug\Base.exe
 D:\C#\Base\Base\obj\Debug\Base.pdb
 D:\C#\Base\Base\obj\Debug\Registration.g.cs
 D:\C#\Base\Base\obj\Debug\Registration.baml
+D:\C#\Base\Base\obj\Debug\user.g.cs
+D:\C#\Base\Base\obj\Debug\user.baml

@@ -16,16 +16,13 @@ using System.Windows.Shapes;
 namespace Base
 {
     /// <summary>
-    /// Логика взаимодействия для Page2.xaml
+    /// Логика взаимодействия для user.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class user : Page
     {
-        private Users user;
-        public Page2(Users user)
+        public user()
         {
-            this.user = user;
             InitializeComponent();
-            username.Content = $"Username: {user.login} Password {user.password}";
         }
     }
 }
